@@ -1,3 +1,4 @@
+require 'pry'
 require './environment'
 
 module FormsLab
@@ -12,6 +13,8 @@ module FormsLab
     end
 
     post '/pirates' do
+      # binding.pry
+      @pirate = Pirate.new(params[:pirate])
 
       erb :'pirates/show'
     end

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Pirate Page</title>
-  </head>
-  <body>
-
-    <form action="/new" method="POST">
+    <form action="/pirates" method="POST">
       <h2>Pirates!</h2>
       <label for="pirate_name">Name: </label><br>
       <input type="text" name="pirate[name]" id="pirate_name"><br>
@@ -30,6 +22,5 @@
       <input type="text" name="pirate[ships][][type]" id="ship_type_2"><br>
       <label for="booty">Booty: </label><br>
       <input type="text" name="pirate[ships][][booty]" id="ship_booty_2"><br>
+      <input type="submit" value="Submit">
     </form>
-  </body>
-</html>
