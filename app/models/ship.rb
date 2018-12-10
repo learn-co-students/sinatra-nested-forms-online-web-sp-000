@@ -1,2 +1,19 @@
 class Ship
-end
+  attr_accessor :name, :type, :booty
+  
+  @@all = [] 
+  
+  def initialize(name, type, booty)
+    @name, @type, @booty = name, type, booty
+    @@all.push(self)
+  end 
+  
+  def self.all 
+    @@all
+  end 
+  
+  def self.clear 
+    @@all.clear 
+  end 
+
+end #end of the Ship class 
