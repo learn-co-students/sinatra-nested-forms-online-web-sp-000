@@ -1,1 +1,17 @@
-<h1>Make your form here</h1>
+<h1>Make your form here
+  <form method="POST" action="/show">
+    <p><input type="text" name="pirate[name]"></p>
+    <p><input type="text" name="pirate[weight]"></p>
+    <p><input type="text" name="pirate[height]"></p>
+    
+    <p><input type="text" name="pirate[ships][][name]"></p>
+    <p><input type="text" name="pirate[ships][][type]"></p>
+    <p><input type="text" name="pirate[ships][][booty]"></p>
+    
+    <p><input type="text" name="pirate[ships][][name]"></p>
+    <p><input type="text" name="pirate[ships][][type]"></p>
+    <p><input type="text" name="pirate[ships][][booty]"></p>
+    
+    <p><input type="submit" name="Submit"></p>
+  </form>
+</h1>
