@@ -1,7 +1,16 @@
 <h1>Display your Pirate here</h1>
-
+<p>Hi! My name is <%= @pirate.name %>, my weight <%= @pirate.weight %> and my height is <%= @pirate.height %>. Don't tell that to somebody! It is a secret! </p>
 
 <h2>Display your first ship here</h2>
-
+<p>My first ship is <%= @ship_1.name %>, its type is <%= @ship_1.type %> and is full of <%= @ship_1.booty %>. Arrrrrrr!!!!! </p>
 
 <h2>Display your second ship here</h2>
+<p>My second ship is <%= @ship_2.name %>, its type is <%= @ship_2.type %> and is full of <%= @ship_2.booty %>. Arrrrrrr!!!!! </p>
+
+<h1>Ships</h1>
+<% @ships.collect do |ship| %>
+<p>Name: <%= ship.name %></p><br>
+<% end %>
+
+
+<%= @ships %>
