@@ -9,11 +9,11 @@ module FormsLab
     end
 
     get '/pirates/new' do
-      erb :new
+      erb :'pirates/new.erb'
     end
 
     post '/pirates' do
-      erb :show
+      erb :'pirates/show.erb'
     end
 
   end
