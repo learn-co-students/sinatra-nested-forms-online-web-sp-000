@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Pirate!</title>
-  </head>
-  <body>
-    <p><%= @pirate.name %></p>
-    <p><%= @pirate.height %></p>
-    <p><%= @pirate.weight %></p>
+<h1>Your Pirate!</h1>
 
-    <p><% @ships.each do |ship| %>
-      <%= ship.name %>
-      <%= ship.type %>
-      <%= ship.booty %>
-    <% end %></p>
-  </body>
-</html>
+<p>Hi! My name is <%= @pirate.name %>, my weight <%= @pirate.weight %> and my height is <%= @pirate.height %>. Don't tell that to somebody! It is a secret! </p>
+
+<h2>Your first ship here</h2>
+<p>Your first ship is <%= @ships.first.name %>, its type is <%= @ships.first.type %> and is full of <%= @ships.first.booty %>. Arrrrrrrggggh!!!!! </p>
+
+<h2>Your second ship here</h2>
+<p>Your second ship is <%= @ships.last.name %>, its type is <%= @ships.last.type %> and is full of <%= @ships.last.booty %>. Arrrrrrrggggh!!!!! </p>
