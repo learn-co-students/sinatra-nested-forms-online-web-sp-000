@@ -2,6 +2,10 @@ class Ship
   attr_accessor :name, :type, :booty
 
   @@all = []
+
+  def save
+    @@all << self
+  end
   
   def self.all
     @@all
