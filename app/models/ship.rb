@@ -16,7 +16,7 @@ class Ship
   end
 
   def self.all
-    self.class.all
+    @@all
   end
 
 end
