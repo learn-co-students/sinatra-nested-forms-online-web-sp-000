@@ -1,7 +1,44 @@
-<h1>Display your Pirate here</h1>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
-<h2>Display your first ship here</h2>
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 
-
-<h2>Display your second ship here</h2>
+<table>
+  <tr>
+    <th>Pirate's Name</th>
+    <th>Pirate's Height</th>
+    <th>Pirates's Weight</th>
+  </tr>
+  <tr>
+    <td><%= @pirate.name %></td>
+    <td><%= @pirate.height %></td>
+    <td><%= @pirate.weight %></td>
+  </tr>
+  <tr>
+    <th>Ship's Name</td>
+    <th>Ship's Type</td>
+    <th>Ship's Booty</td>
+  </tr>
+  <tr>
+    <% @ships.each do |ship| %>
+    <tr>
+    <td><%= ship.name %></td>
+    <td><%= ship.type %></td>
+    <td><%= ship.booty %></td>
+    </tr>
+    <% end %>
+  </tr>
+</table>

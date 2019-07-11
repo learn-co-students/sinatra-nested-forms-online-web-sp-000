@@ -1,1 +1,36 @@
-<h1>Make your form here</h1>
+<h1>Please enter your pirates and ships here.</h1>
+
+<form method="post" action="/pirates">
+  <fieldset>
+    <legend>Pirate and Ship Information:</legend>
+    Pirate's name:<br>
+    <input type="text" name="pirate[name]">
+    <br>
+    Pirate's height:<br>
+    <input type="text" name="pirate[height]">
+    <br>
+    Pirate's weight:<br>
+    <input type="text" name="pirate[weight]">
+    <br>
+    Ship One's Name:<br>
+    <input id="ship_name_1" type="text" name="pirate[ships][][name]">
+    <br>
+    Ship One's Type:<br>
+    <input id="ship_type_1" type="text" name="pirate[ships][][type]">
+    <br>
+    Ship One's Booty:<br>
+    <input id="ship_booty_1" type="text" name="pirate[ships][][booty]">
+    <br>
+    Ship Two's Name:<br>
+    <input id="ship_name_2" type="text" name="pirate[ships][][name]">
+    <br>
+    Ship Two's Type:<br>
+    <input id="ship_type_2" type="text" name="pirate[ships][][type]">
+    <br>
+    Ship Two's Booty:<br>
+    <input id="ship_booty_2" type="text" name="pirate[ships][][booty]">
+    <br>
+    <br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
