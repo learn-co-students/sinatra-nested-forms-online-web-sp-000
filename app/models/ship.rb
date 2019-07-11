@@ -4,10 +4,11 @@ class Ship
 
   def initialize(ship_attributes)
     ship_attributes.each { |key, value| self.send(("#{key}="), value) }
+    save << self
   end
 
   def save
-    self.class.all << self
+    self.class.all
   end
 
   def self.all

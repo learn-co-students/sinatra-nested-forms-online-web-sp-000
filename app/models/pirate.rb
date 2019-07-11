@@ -4,16 +4,15 @@ class Pirate
 
   def initialize(pirate_attributes)
     pirate_attributes.each { |key, value| self.send(("#{key}="), value) }
-
     save << self
   end
 
   def self.all
-    @all
+    @@all
   end
 
   def save
-    self.class.all << self
+    self.class.all
   end
 
 end
