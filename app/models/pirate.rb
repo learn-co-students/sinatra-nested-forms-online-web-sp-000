@@ -16,6 +16,7 @@ class Pirate
  
 end
 
+
 [1] pry(#<Pirate>)> params
 => {"name"=>"Ian",
  "weight"=>"165",
@@ -27,3 +28,4 @@ end
    
 [8] pry(#<Pirate>)> params[:ships][0][:name]
 => "Titanic"
+
