@@ -14,7 +14,7 @@ module FormsLab
 
   
   post '/pirates' do
-  @pirate = Pirate.new(params[:pirate])        ---> (params from FORM(attr.acces) == argument HASH for Pirate.new - pirate info & nested ship ARRAY)
+  @pirate = Pirate.new(params[:pirate])        ---> (all params are from FORM (attr.acces) == argument HASH for Pirate.new -> pirate info & nested ship ARRAY)
 
   params[:pirate][:ships].each do |details|    ---> (three arguments iteration "name","type","booty")(nested SHIPS)
     Ship.new(details)                          ---> creating new ship objects with 3 arguments
@@ -32,7 +32,7 @@ end
 [1] pry(#<FormsLab::App>)> @pirate = Pirate.new(params[:pirate])
 => <Pirate:0x0000000002ce36a8 @height="95", @name="Ian", @weight="165">
 
-[2] pry(#<FormsLab::App>)> params[:pirate]
+[2] pry(#<FormsLab::App>)> params[:pirate] or params
 => {"name"=>"Ian",
  "weight"=>"165",
  "height"=>"95",
