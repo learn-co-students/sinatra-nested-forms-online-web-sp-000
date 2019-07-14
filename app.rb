@@ -4,11 +4,14 @@ module FormsLab
   class App < Sinatra::Base
 
   get '/' do
-    erb :new
+    "Welcome to the Nested Forms Lab!"
   end
   
-=begin
+  get '/new' do
+    erb :'pirates/new'
+  end
   
+
   
   post '/pirates' do
   @pirate = Pirate.new(params[:pirate])
@@ -19,12 +22,11 @@ module FormsLab
  
   @ships = Ship.all
  
-  erb :show
+  erb :'pirates/show'
 end
 
-=end
 
 
   end
-
+end
 
