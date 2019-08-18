@@ -1,15 +1,17 @@
 class Pirate
   attr_accessor :name, :weight, :height
 
-  pir_array = []
+  PIR_ARRAY = []
 
   def initialize(args)
     @name = args[:name]
     @weight = args[:weight]
     @height = args[:height]
+    PIR_ARRAY << self
   end
 
   def self.all
-    pir_array
+    PIR_ARRAY
   end
+
 end
