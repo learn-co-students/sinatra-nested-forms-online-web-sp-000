@@ -12,14 +12,12 @@ require './environment'
         end
 
         post '/pirates' do
+          @pirate_ships = []
 
           @pirate = Pirate.new(params[:pirate])
-          binding.pry
-
-
 
           params[:pirate][:ships].each do |details|
-            Ship.new(details)
+            @pirate_ships<<Ship.new(details)
           end
 
           erb :"pirates/show"
