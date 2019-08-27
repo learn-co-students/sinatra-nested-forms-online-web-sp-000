@@ -12,9 +12,9 @@ require './environment'
         end
 
         post '/pirates' do
-          @pirate_person = params[:pirate]
+
+          @pirate = Pirate.new(params[:pirate])
           binding.pry
-          @pirate = Pirate.new(pirate_person)
 
 
 

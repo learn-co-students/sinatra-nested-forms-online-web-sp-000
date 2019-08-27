@@ -5,5 +5,4 @@ class Pirate
     @weight = pirate_person[:weight]
     @height = pirate_person[:height]
   end
-  binding.pry
 end
