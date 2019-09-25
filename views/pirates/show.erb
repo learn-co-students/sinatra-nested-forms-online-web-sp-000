@@ -6,20 +6,21 @@
 
 <h2>Display your first ship here</h2>
 
-  <p><%= @ship_name_1.name %></p>
-  <p><%= @ship_type_1.type %></p>
-  <p><%= @ship_type_1.booty %></p>
+  <p>1st Ship Name: <%= @ships.first.name %></p>
+  <p>1st Ship Type: <%= @ships.first.type %></p>
+  <p>1st Ship Booty: <%= @ships.first.booty %></p>
   
 <h2>Display your second ship here</h2>
 
-<p><%= @ship_name_2.name %></p>
-<p><%= @ship_type_2.type %></p>
-<p><%= @ship_booty_2.booty %></p>
+<p>2nd Ship Name: <%= @ships.last.name %></p>
+<p>2nd Ship Type: <%= @ships.last.type %></p>
+<p>2nd Ship Booty: <%= @ships.last.booty %></p>
 
-
-#<% @ship.each do |ship| %>
-   # <div class="ship">
-    #  <p>Ship: <%= ship.name %></p><br>
-     # <p>:Booty: <%= ship.booty %></p><br>
-    #</div><br>
-  #<% end %>
+<h1>Ships</h1>
+<% @ships.each do |ship| %>
+  <div class="ship">
+    <p>Name: <%= ship.name %></p><br>
+    <p>Type: <%= ship.type %></p><br>
+    <p>Booty: <%= ship.booty %></p>
+  </div><br>
+<% end %>
