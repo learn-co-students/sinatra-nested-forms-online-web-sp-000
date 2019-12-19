@@ -1,10 +1,32 @@
 <h1>Make your form here</h1>
-<form action="/new" method="post">
-  Pirate Name: <input type="text" name="pirate[name]">
-  Pirate Weight: <input type="text" name="pirate[weight]">
-  Pirate Height: <input type="text" name="pirate[height]">
-  Ship name: <input type="text" name="pirate[ships][][name]">
-  Ship type: <input type="text" name="pirate[ships][][type]">
-  Booty Attributes: <input type="text" name="pirate[ships][][booty_attributes]">
+<form action='/pirates' method='POST'>
+  <h2>Pirate</h2>
+  Pirate Name: <input type="text" name="pirate[name]"><br>
+  Pirate Weight: <input type="text" name="pirate[weight]"><br>
+  Pirate Height: <input type="text" name="pirate[height]"><br><br>
+  
+  Ship name: <input type="text" name="pirate[ships][][name]"><br>
+  Ship type: <input type="text" name="pirate[ships][][type]"><br>
+  Booty Attributes: <input type="text" name="pirate[ships][][booty]"><br>
+
+#solution below, mine above
+#Question: Can I format this like above while still having the ship_name_1 and 2 labels?
+#How do labels interact with the form, again?
+  <h2>Ship(s)</h2>
+  <label for="ship_name_1">Name</label><br>
+  <input id="ship_name_1" type="text" name="pirate[ships][][name]" /><br>
+  <label for="ship_type_1">Type</label><br>
+  <input id="ship_type_1" type="text" name="pirate[ships][][type]" /><br>
+  <label for="ship_booty_1">Booty</label><br>
+  <input id="ship_booty_1" type="text" name="pirate[ships][][booty]" /><br><br>
+
+  <label for="ship_name_2">Name</label><br>
+  <input id="ship_name_2" type="text" name="pirate[ships][][name]" /><br>
+  <label for="ship_booty_2">Type</label><br>
+  <input id="ship_type_2" type="text" name="pirate[ships][][type]" /><br>
+  <label for="ship_booty_2">Booty</label><br>
+  <input id="ship_booty_2" type="text" name="pirate[ships][][booty]" /><br>
+  <input type="submit" value="Submit">
   <input type="submit">
 </form>
+
