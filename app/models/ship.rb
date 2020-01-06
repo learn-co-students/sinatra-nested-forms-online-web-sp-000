@@ -1,13 +1,15 @@
-class Ship
+class Ship < ActiveRecord::Base
+  belongs_to :pirate
+  
   @@all = []
   
   attr_accessor :name, :type, :booty
   
   @@all = []
   
-  def initialize(name, type, booty)
+  def initialize(name, category, booty)
     @name = name 
-    @type = type
+    @category = category
     @booty = booty
     self.all << self
   end
