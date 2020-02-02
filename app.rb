@@ -12,7 +12,11 @@ module FormsLab
     end
 
     post '/pirates' do
-      binding.pry
+      # binding.pry
+      @pirate = Pirate.new(params["pirate"]["name"], params["pirate"]["weight"], params["pirate"]["height"])
+      @ships = params[:pirate][:ships].collect do |ship|
+        Ship.new(ship['name'], ship['type'], ship['booty'])
+      end
       erb :'/pirates/show'
     end
   end
