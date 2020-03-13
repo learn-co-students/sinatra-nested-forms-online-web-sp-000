@@ -11,17 +11,21 @@ module FormsLab
     get '/new' do 
       erb :'pirates/new'
     end 
+
+    # get '/' do 
+    #   erb :show 
+    # end 
   
     post '/pirates' do 
       @pirate = Pirate.new(params[:pirate])
 
-      params[:pirate][:ships].each do |pirate_details|
-        Ship.new(pirate_details)
+      params[:pirate][:ships].each do |ship_details|
+        Ship.new(ship_details)
       end 
 
       @ships = Ship.all
-
-      erb :'pirates/new/show'
+      #binding.pry
+      erb :'pirates/show'
     end 
 
 
