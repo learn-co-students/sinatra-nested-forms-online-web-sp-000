@@ -12,3 +12,6 @@ group :test do
   gem 'rack-test'
   gem 'capybara'
 end
+
+gem 'standardrb'
+gem 'htmlbeautifier'
