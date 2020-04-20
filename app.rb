@@ -1,5 +1,8 @@
 require './environment'
 
+# Post lets you get
+# Get lets you view
+
 module FormsLab
   class App < Sinatra::Base
 
@@ -9,8 +12,13 @@ module FormsLab
     end
 
     # set :new, 'app/new'
+    # post '/new' do
+    #   erb :new
+    # end
+
+
     get '/new' do
-      "Hello"
+
       # binding.pry
       #  erb :new
     end
