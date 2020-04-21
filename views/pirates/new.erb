@@ -1,19 +1,25 @@
+
+
 <form method="post" action="/pirates" >
   <h2>New Pirate</h2>
-  <h1>Name: <input type= "text" name="pirate[name]"></h1>
-  <h1>Age: <input type= "text" name="pirate[age]"></h1>
-  <h1>Height: <input type= "text" name="pirate[height]"></h1>
+  <h1>Name: <input type= "text" name="pirate[name]"> <%= @name %></h1>
+  <h1>Age: <input type= "text" name="pirate[weight]"> <%= @weight %></h1>
+  <h1>Height: <input type= "text" name="pirate[height]"> <%= @height %></h1>
 
+<div class= "ship">
   <h2>New Ship</h2>
-  <h1>Name: <input type= "text" name="pirate[ship][][name]"></h1>
-  <h1>Age: <input type= "text" name="pirate[ship][][age]"></h1>
-  <h1>Height: <input type= "text" name="pirate[ship][][booty]"></h1>
+  <h1>Name: <input type= "text" name="pirate[ships][][name]" id="ship_name_1"> <%= @ship_name_1 %> </h1>
+  <h1>Age: <input type= "text" name="pirate[ships][][type]" id="ship_type_1"> <%= @ship_type_1 %> </h1>
+  <h1>Height: <input type= "text" name="pirate[ships][][booty]" id="ship_booty_1"> <%= @ship_booty_1 %> </h1>
+</div>
 
+<div class= "ship2">
   <h2>New Ship</h2>
-  <h1>Name: <input type= "text" name="pirate[ship][][name]"></h1>
-  <h1>Age: <input type= "text" name="pirate[ship][][age]"></h1>
-  <h1>Height: <input type= "text" name="pirate[ship][][booty]"></h1>
-  <input type="submit" value="submit">
+  <h1>Name: <input type= "text" name="pirate[ships][][name]" id="ship_name_2"> <%= @ship_name_2 %> </h1>
+  <h1>Age: <input type= "text" name="pirate[ships][][type]"  id="ship_type_2"> <%= @ship_type_2 %> </h1>
+  <h1>Height: <input type= "text" name="pirate[ships][][booty]" id="ship_booty_2"> <%= @ship_booty_2 %> </h1>
+<div>
+  <input type="submit" value="submit" id="Submit">
 
 
 </form>

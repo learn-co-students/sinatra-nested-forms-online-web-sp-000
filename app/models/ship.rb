@@ -13,7 +13,7 @@ def self.all
 end
 
 def self.clear
-  @@all.destroy
+  SHIPS.clear
 end
 
 

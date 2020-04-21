@@ -11,27 +11,29 @@ module FormsLab
       erb :root
     end
 
-    # set :new, 'app/new'
-    # post '/new' do
-    #   erb :new
-    # end
-
 
     get '/new' do
-
-      # binding.pry
-      #  erb :new
+       erb :"pirates/new"
     end
 
 
-    # get '/pirates/index' do
-    #   @pirate = Pirate.all
-    # end
+    post '/pirates' do
+      @pirates = params
+      @name = params[:pirate][:name]
+      @weight = params[:pirate][:weight]
+      @height = params[:pirate][:height]
 
-    # post '/pirates' do
-    #
-    #   erb :new
-    # end
+      @ship_name_1 = params[:pirate][:ships][0][:name]
+      @ship_name_2 = params[:pirate][:ships][1][:name]
+      @ship_type_1 = params[:pirate][:ships][0][:type]
+      @ship_type_2 = params[:pirate][:ships][1][:type]
+      @ship_booty_1 = params[:pirate][:ships][0][:booty]
+      @ship_booty_2 = params[:pirate][:ships][1][:booty]
+      # binding.pry
+      erb :"pirates/new"
+    end
+
+
 
   end
 end
