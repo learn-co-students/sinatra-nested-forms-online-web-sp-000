@@ -96,3 +96,4 @@ describe "FormsLab::App" do
     end
   end
 end
+
