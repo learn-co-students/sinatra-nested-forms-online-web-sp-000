@@ -1,5 +1,7 @@
 require './environment'
 
+#if anyone reads this, don't judge, it's ugly but it works lol
+
 module FormsLab
   class App < Sinatra::Base
 
