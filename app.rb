@@ -1,4 +1,5 @@
 require './environment'
+require 'pry'
 
 module FormsLab
   class App < Sinatra::Base
@@ -21,10 +22,7 @@ module FormsLab
       @ships = Ship.all
 
       erb :'pirates/show'  
-    end
-
-
-    
+    end    
 
   end
 end
