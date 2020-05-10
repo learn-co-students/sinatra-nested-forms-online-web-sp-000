@@ -21,18 +21,3 @@ module FormsLab
     end
   end
 end
-
-
-# attributes = {"pirate"=> {"name"=>"Ian",
-# "weight"=>"165",
-# "height"=>"95",
-# "ships"=> [
-#   {"name"=>"Titanic",
-#     "type"=>"Steam Liner",
-#     "booty"=>"Silver"},
-#   {"name"=> "Carpathia",
-#     "type"=>"Rescue Ship",
-#     "booty"=>"Inner Tubes"}
-#   ] 
-# }
-# }
