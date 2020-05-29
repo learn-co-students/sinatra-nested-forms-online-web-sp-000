@@ -4,11 +4,8 @@
 <p>weight: <%=pirate.weight%></p>
 
 <h2>Display your first ship here</h2>
-<p>Ship name: <%=ship.name%></p>
-<p>Type: <%=ship.type%></p>
-<p>Booty: <%=ship.booty%></p>
-
-<h2>Display your second ship here</h2>
-<p>Ship name: <%=ship.name%></p>
-<p>Type: <%=ship.type%></p>
-<p>Booty: <%=ship.booty%></p>
+<% @ships.each do |ship| %>
+  <p>Ship Name: <%= ship.name %></p>
+  <p>Type: <%= ship.type %></p>
+  <p>Booty: <%= ship.booty %></p>
+<% end %>

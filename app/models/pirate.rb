@@ -1,2 +1,0 @@
-class Pirate
-end
