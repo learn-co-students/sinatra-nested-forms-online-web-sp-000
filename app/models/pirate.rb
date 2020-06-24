@@ -1,5 +1,9 @@
+#Step 2 Create and work with your models. This should be empty until your db is filled.
 class Pirate
-    attr_accessor :name, :weight, :height
+
+  # has_many: ship
+
+  attr_accessor :name, :weight, :height
 
   PIRATES = []
 

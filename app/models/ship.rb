@@ -1,5 +1,8 @@
+#Step 2 Create and work with your models. This should be empty until your db is filled.
 class Ship
-    attr_accessor :name, :type, :booty
+  # belongs_to: pirate
+
+  attr_accessor :name, :type, :booty
 
   SHIPS = []
 

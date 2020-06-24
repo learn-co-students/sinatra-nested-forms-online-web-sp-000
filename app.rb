@@ -1,3 +1,5 @@
+#Step 3: Create your Routes! - this should be empty until models and db are filled in.
+
 require './environment'
 
 module FormsLab
@@ -13,6 +15,7 @@ module FormsLab
     end
 
     post "/pirates" do
+      binding.pry
       @pirate = Pirate.new(params[:pirate])
 
       params[:pirate][:ships].each do |details|

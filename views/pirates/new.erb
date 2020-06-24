@@ -1,31 +1,33 @@
+<!--Step 4: make sure your db, models, and routes are lined up before working here! -->
+
 <h1>Make your form here</h1>
 <form action='/pirates' method='post'>
-    <label for="name"> Pirate Name:</label><br>
-    <input type="text" id="name" name="pirate[name]"><br>
+    <label for="pirate_name"> Pirate Name:</label><br>
+    <input type="text" id="pirate_name" name="pirate[name]"><br>
 
-    <label for="weight">Pirate Weight:</label><br>
-    <input type="text" id="weight" name="pirate[weight]"><br>
+    <label for="pirate_weight">Pirate Weight:</label><br>
+    <input type="text" id="pirate_weight" name="pirate[weight]"><br>
 
-    <label for="height">Pirate Height:</label><br>
-    <input type="text" id="weight" name="pirate[height]"><br>
+    <label for="pirate_height">Pirate Height:</label><br>
+    <input type="text" id="pirate_weight" name="pirate[height]"><br>
 
 
-    <label for="name">First Ship's Name:</label><br>
+    <label for="ship_name">Ship No. 1 Name:</label><br>
     <input type="text" id="ship_name_1" name="pirate[ships][][name]"><br>
     
-    <label for="name">First Ship's Type:</label><br>
+    <label for="ship_type">Ship No. 1 Type:</label><br>
     <input type="text" id="ship_type_1" name="pirate[ships][][type]"><br>
     
-    <label for="name">First Ship's Booty:</label><br>
+    <label for="ship_booty">Ship No. 1 Booty:</label><br>
     <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"><br>
 
-    <label for="name">Second Ship's Name:</label><br>
+    <label for="ship_name">Ship No. 2 Name:</label><br>
     <input type="text" id="ship_name_2" name="pirate[ships][][name]"><br>
     
-    <label for="name">Second Ship's Type:</label><br>
+    <label for="ship_type">Ship No. 2 Type:</label><br>
     <input type="text" id="ship_type_2" name="pirate[ships][][type]"><br>
     
-    <label for="name">Second Ship's Booty:</label><br>
+    <label for="ship_booty">Ship No. 1 Booty:</label><br>
     <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"><br>
 
     <input type="submit" value="Submit">
