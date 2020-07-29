@@ -7,6 +7,8 @@ class Pirate
         @name = name
         @weight = weight
         @height = height
+
+        @@all << self
     end
 
     def self.all
