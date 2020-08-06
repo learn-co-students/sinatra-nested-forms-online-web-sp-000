@@ -1,6 +1,15 @@
 class Pirate
   attr_accessor :name, :weight, :height
-  def initialize(attrs)
-    attrs.each{|k,v| self.send("#{k}=",v)}
+  @@all =[]
+  def initialize(params)
+    @name = params[:name]
+    @weight = params[:weight]
+    @height = params[:height]
+    @@all << self
   end
+
+  def self.all
+    @@all
+  end
+
 end
