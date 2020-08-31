@@ -1,7 +1,19 @@
-<h1>Display your Pirate here</h1>
+<h1>Pirate</h1>
 
+<p>Pirate name: <%= @pirate.name %></p>
+<p>Pirate weight: <%= @pirate.weight %></p>
+<p>Pirate height: <%= @pirate.height %></p>
 
-<h2>Display your first ship here</h2>
+<h2>First ship</h2>
 
+<p>Ship one name: <%= @ships[0].name %></p>
+<p>Ship one type: <%= @ships[0].type %></p>
+<p>Ship one booty: <%= @ships[0].booty %></p>
 
-<h2>Display your second ship here</h2>
+<% if !@ships[1].name.empty? %> <!-- Added functionality: omits second ship if not filled out-->
+<h2>Second ship</h2>
+
+<p>Ship two name: <%= @ships[1].name %></p>
+<p>Ship two type: <%= @ships[1].type %></p>
+<p>Ship two booty: <%= @ships[1].booty %></p>
+<% end %>
