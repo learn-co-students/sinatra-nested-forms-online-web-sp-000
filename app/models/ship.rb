@@ -3,10 +3,10 @@ class Ship
 
   SHIPS = []
 
-  def initialize(attrs)
-    @name = attrs[:name]
-    @type = attrs[:type]
-    @booty_attributes = attrs[:booty_attributes]
+  def initialize(params)
+    @name = params[:name]
+    @type = params[:type]
+    @booty = params[:booty]
     SHIPS << self
   end
 
