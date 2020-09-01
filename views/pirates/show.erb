@@ -19,7 +19,7 @@
 
 
   <h1>Ship Two</h1>
-  <% @ships.each.with_index do |ship, index| %>
+  <% @ships.each_with_index do |ship, index| %>
   <div class="ship">
     <% if index == 1 %>
     <p>Name: <%= ship.name %></p>
@@ -28,7 +28,3 @@
     <% end %>
   <% end %>
   </div><br>
-
-  <%= @pirate.name %>
-  <%= @pirate.height %>
-  <%= @pirate.width %>
