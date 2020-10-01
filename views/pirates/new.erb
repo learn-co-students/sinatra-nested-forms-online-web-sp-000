@@ -1,1 +1,65 @@
 <h1>Make your form here</h1>
+<!--
+# fill_in("pirate[name]", :with => "Captain Jack Sparrow")
+# fill_in("pirate[weight]", :with => "190 lbs")
+# fill_in("pirate[height]", :with => "5 feet 11 inches")
+# fill_in("ship_name_1", :with => "Flying Dutchman")
+# fill_in("ship_type_1", :with => "ghost ship")
+# fill_in("ship_booty_1", :with => "gold coins")
+# fill_in("ship_name_2", :with => "Black Pearl")
+# fill_in("ship_type_2", :with => "merchant vessel")
+# fill_in("ship_booty_2", :with => "treasure map")
+# click_button('Submit')
+-->
+
+<form action="/pirates" method="POST">
+<label for="pirate[name]">Pirate name:</label>
+<input type="text" name="pirate[name]" id="pirate[name]"><br>
+<label for="pirate[weight]">Pirate weight:
+<input type="text" name="pirate[weight]" id="pirate[weight]"><br>
+<label for="pirate[height]">Pirate height:
+<input type="text" name="pirate[height]" id="pirate[height]"><br>
+
+
+
+<label for="ship_name_1">ship name:</label>
+<input type="text" name="pirate[ships][][name]" id="ship_name_1"><br>
+<label for="ship_type_1">ship type:</label>
+<input type="text" name="pirate[ships][][type]" id="ship_type_1"><br>
+<label for="ship_booty_1">ship booty:</label>
+<input type="text" name="pirate[ships][][booty]" id="ship_booty_1"><br>
+
+
+<label for="ship_name_2">ship name:</label>
+<input type="text" name="pirate[ships][][name]" id="ship_name_2"><br>
+<label for="ship_type_2">ship type:</label>
+<input type="text" name="pirate[ships][][type]" id="ship_type_2"><br>
+<label for="ship_booty_2">ship booty:</label>
+<input type="text" name="pirate[ships][][booty]" id="ship_booty_2"><br>
+
+<input type="submit" id="submit" value ="Submit">
+</form>
+
+<!--
+#this is a params with ONE key-par value. the key is priate
+#the value is this huge nested hash
+
+# "pirate"=> {
+#     "name"=>"Ian",
+#     "weight"=>"165",
+#     "height"=>"95",
+#     "ships"=> [
+#       {
+#         "name"=>"Titanic",
+#         "type"=>"Steam Liner",
+#         "booty"=>"Silver"
+#       },
+#       {
+#         "name"=> "Carpathia",
+#         "type"=>"Rescue Ship",
+#         "booty"=>"Inner Tubes"
+#       }
+#     ]
+#   }
+# }
+-->
