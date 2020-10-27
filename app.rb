@@ -20,7 +20,7 @@ module FormsLab
 
       @ships = Ship.all
 
-      erb :'pirates/show'
+      erb 'pirates/show'.to_sym # need to convert the path to a symbol
     end
 
   end
