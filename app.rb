@@ -8,7 +8,7 @@ module FormsLab
     end
 
     get '/new' do
-      erb :'pirates/new'
+      erb :'pirates/new' # surround path in quotes if you need to reference a sub-directory
     end
 
     post '/pirates' do
