@@ -7,6 +7,7 @@ class Pirate
         @name = args[:name]
         @weight = args[:weight]
         @height = args[:height]
+        
         PIRATES << self
     end
 
