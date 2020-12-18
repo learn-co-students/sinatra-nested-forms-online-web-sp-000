@@ -1,0 +1,13 @@
+<label>Create Your Pirate and Ships</label>
+<form method = "POST" action = '/pirates'>
+    <p>Pirate Name: <input type = "text"  name = "pirate[name]" id = "pirate[name]"></p>
+    <p>Pirate Weight: <input type = "text"  name = "pirate[weight]" id = "pirate[weight]"></p>
+    <p>Pirate Hieght: <input type = "text"  name = "pirate[height]" id = "pirate[height]"></p>
+    <p>Ship One Name: <input type = "text" name = "pirate[ships][][name]" id = "ship_name_1"></p>
+    <p>Ship One Type: <input type = "text" name = "pirate[ships][][type]" id = "ship_type_1"></p>
+    <p>Ship One Booty: <input type = "text" name = "pirate[ships][][booty]" id = "ship_booty_1"></p>
+    <p>Ship Two Name: <input type = "text" name = "pirate[ships][][name]" id = "ship_name_2"></p>
+    <p>Ship Two Type: <input type = "text" name = "pirate[ships][][type]" id = "ship_type_2"></p>
+    <p>Ship Two Booty: <input type = "text" name = "pirate[ships][][booty]" id = "ship_booty_2"></p>
+    <input type = "submit" value = "Submit">
+</form>
