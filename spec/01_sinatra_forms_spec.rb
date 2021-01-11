@@ -25,7 +25,7 @@ describe "FormsLab::App" do
     it "renders a new form element on the page" do
       expect(last_response.body).to include("<form")
       expect(last_response.body).to include("</form>")
-    end
+    end 
 
     it "renders the pirate input fields for name, weight, and height attributes on the page" do
       expect(last_response.body).to include("pirate[name]")
