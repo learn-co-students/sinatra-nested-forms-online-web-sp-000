@@ -1,0 +1,21 @@
+<body>
+<h1>Pirate</h1>
+ 
+<div class="pitate">
+  <h3><p>Name: <%= @pirate.name %><br>
+  Weight: <%= @pirate.weight %><br>
+  Height: <%= @pirate.height %></p></h3>
+</div><br>
+ 
+<h2>Ships</h2>
+
+<h3> <% @ships.each do |ship| %>
+  <div class="ship">
+    <p>Name: <%= ship.name %><br>
+    Type: <%= ship.type %><br>
+    Booty Attributes: <%= ship.booty %></p><br>
+  </div><br>
+<% end %> </h3>
+
+</body>
+
