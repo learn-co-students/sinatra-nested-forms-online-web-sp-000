@@ -9,13 +9,13 @@ module FormsLab
     end
 
     get '/new' do
-      erb :new
+      erb :'pirates/new'
     end
 
     post '/pirates' do
       @pirate = params[:pirate]
       @ships = args[:ship]
-      erb :show
+      erb :'pirates/show'
     end
   end
 end
