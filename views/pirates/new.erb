@@ -1,5 +1,5 @@
 <h1>Welcome!</h1>
-<form action="/new" method="get">
+<form method="post" action="/pirates">
   <label for="name">Pirate Name:</label>
       <input type="text" id="pname" name="pirate[name]">
 
@@ -28,5 +28,6 @@
   <label for="ship_booty_2"> Ship's Booty:</label>
     <input type="text" id="ship_booty_2" name="pirate[ships][][booty]">
 
-  <input type="submit">
+  <label for="submit">Submit</label>
+  <input type="submit" id="submit">
 </form>
