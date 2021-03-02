@@ -2,14 +2,14 @@ source "https://rubygems.org"
 
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-reloader', require: false
-gem 'activerecord', :require => 'active_record'
-gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 gem 'shotgun'
 gem 'pry'
 gem 'tux'
 gem 'require_all'
-gem 'sqlite3'
-
+gem "sqlite3"
+gem 'rake'
+gem 'activerecord'
+gem 'sinatra-activerecord'
 
 group :test do
   gem 'rspec'

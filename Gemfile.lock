@@ -48,6 +48,7 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rake (13.0.3)
     regexp_parser (2.1.1)
     require_all (3.0.0)
     ripl (0.7.1)
@@ -111,6 +112,7 @@ DEPENDENCIES
   capybara
   pry
   rack-test
+  rake
   require_all
   rspec
   shotgun
