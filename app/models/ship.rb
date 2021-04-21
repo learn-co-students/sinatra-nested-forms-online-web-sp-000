@@ -1,9 +1,12 @@
 class Ship
     attr_accessor :name, :type, :booty
     @@all = []
-    def initialize(attributes)
-        attributes.each {|key, value| self.send(("#{key}="), value)}
-        @@all << self
+    
+    def initialize(args)
+      @name = args[:name]
+      @type = args[:type]
+      @booty = args[:booty]
+      @@all << self
     end
 
     def self.all
