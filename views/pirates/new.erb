@@ -1,1 +1,27 @@
-<h1>Make your form here</h1>
+<h1>New Pirate Registry:</h1>
+<form method="POST" action="/pirates">
+    <p><label for="name">Pirate Name</label>
+    <input type="text" name="pirate[name]"></p>
+    <p><label for="weight">Pirate Weight</label>
+    <input type="text" name="pirate[weight]"></p>
+    <p><label for="height">Pirate Height</label>
+    <input type="text" name="pirate[height]"></p>
+
+    <h2>1st Ship Info</h2>
+    <p><label for="name">Ship Name</label>
+    <input type="text" name="pirate[ships][][name]" id="ship_name_1"></p>
+    <p><label for="type">Ship Type</label>
+    <input type="text" name="pirate[ships][][type]" id="ship_type_1"></p>
+    <p><label for="booty">Ship Booty</label>
+    <input type="text" name="pirate[ships][][booty]" id="ship_booty_1"></p>
+
+    <h2>2nd Ship Info</h2>
+    <p><label for="name">Ship Name</label>
+    <input type="text" name="pirate[ships][][name]" id="ship_name_2"></p>
+    <p><label for="type">Ship Type</label>
+    <input type="text" name="pirate[ships][][type]" id="ship_type_2"></p>
+    <p><label for="booty">Ship Booty</label>
+    <input type="text" name="pirate[ships][][booty]" id="ship_booty_2"></p>
+
+    <input type="submit" id="Submit">
+</form>
